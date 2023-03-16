@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<title>Booking Form HTML Template</title>
+
+	
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
+	
+
+
+</head>
+
+<body>
+	<div id="booking" class="section">
+		<div class="section-center">
+			<div class="container">
+				<div class="row">
+					<div class="booking-form">
+						<div class="form-header">
+							<h1>Book a car</h1>
+						</div>
+						<!-- <form> -->
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="form-group">
+										<span class="form-label">Name</span>
+										<input class="form-cont" type="text" placeholder="Enter your name" [(ngModel)]="name">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<span class="form-label">Email</span>
+										<input class="form-conta" type="email" placeholder="Enter your email" [(ngModel)]="email">
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<span class="form-label">Phone</span>
+								<input class="form-control" type="tel" placeholder="Enter your phone number" [(ngModel)]="number">
+							</div>
+							<!-- <div class="form-group">
+								<span class="form-label">Pickup Location</span>
+								<input class="form-control" type="text" placeholder="Enter ZIP/Location">
+							</div> -->
+							<!-- <div class="form-group">
+								<span class="form-label">Destination</span>
+								<input class="form-control" type="text" placeholder="Enter ZIP/Location">
+							</div> -->
+							<div class="row">
+								<div class="col-sm-5">
+									<div class="form-group">
+										<span class="form-label">When do you need a car ?</span>
+										<input class="form-control" type="date" required [(ngModel)]="date1">
+									</div>
+								</div>
+								
+							</div>
+
+							<div class="row">
+								<div class="col-sm-5">
+									<div class="form-group">
+										<span class="form-label">Till when do you need it ?</span>
+										<input class="form-control" type="date" required [(ngModel)]="date2">
+									</div>
+								</div>
+								
+									</div>
+							
+
+							<div class="col-lr-12">
+								<div class="form-group">
+									<span class="form-label">Address</span>
+									<input class="form-controll" type="text" placeholder="Enter your Address " [(ngModel)]="address">
+								</div>
+							</div>
+							
+							<div class="form-btn">
+								<button class="submit-btn"  (click)="submitForm()">Book Now</button>
+							</div>
+						<!-- </form> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

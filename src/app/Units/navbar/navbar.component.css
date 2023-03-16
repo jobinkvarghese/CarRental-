@@ -1,0 +1,27 @@
+
+
+.navbar-brand{
+    color:rgba(16, 5, 40, 0.926);
+
+}
+.active_nav{
+    background-color:white;
+    box-shadow: 0 3px 10px rgba(245, 244, 244, 0.959);
+}
+.navbar{
+    transition: all 0.5s;
+}
+
+
+.nav-link{
+    transition: all 0.2s;
+}
+
+
+.nav-link:hover{
+    border-bottom: 2px solid blue;
+    
+}
+h3{
+    color: brown;
+}

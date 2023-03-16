@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <html>
+    <head>
+        <Title>Login Form</Title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+    </head>
+    <body>
+        <div class="form">
+            <h2>Login</h2>
+            <div class="input">
+                <div class="inputBox">
+                    <label for="">Email</label>
+                    <input type="email" [(ngModel)]="email1">
+                </div>
+                <div class="inputBox">
+                    <label for="">Password</label>
+                    <input type="password" [(ngModel)]="password1">
+                </div>
+                <div class="inputBox">
+                    <input type="submit" name="" value="Sign In" (click)="login1()" > 
+                </div>
+            </div>
+            <p class="forgot">Don't have an account? <a routerLink="/signup">Register Here</a></p>
+        </div>
+    </body>
+</html>

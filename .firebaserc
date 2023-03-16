@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "mini-project-18515": {
+      "hosting": {
+        "Mini_project": [
+          "mini-project-18515"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "mini-project-18515"
+  }
+}

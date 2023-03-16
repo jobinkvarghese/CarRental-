@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body background="../../../assets/images/bg11.jpg">
+    
+<div class="container">
+    <div class="row">
+
+
+
+        <div class="col">
+            
+        </div>
+
+        
+        <div class="col-md-7">
+            <h2 class = "product-title">{{single[0].name2}}</h2>
+            
+                        
+        </div>
+
+        <div class = "card-wrapper">
+            <div class = "card">
+              <!-- card left -->
+              <div class = "product-imgs">
+                <div class = "img-display">
+                  <div class = "img-showcase">
+                    <!-- <img src = "../../../assets/images/car-1.jpg" alt = "shoe image"> -->
+                    <img src="../../../assets/images/{{single[0].img2}}" alt=""width="" height="">
+                
+                  </div>
+                </div>
+                <!-- <div class = "img-select">
+                  <div class = "img-item">
+                    <a href = "../../../assets/images/car-6.jpg" data-id = "1">
+                      <img src = "../../../assets/images/car-6.jpg" alt = "shoe image">
+                    </a>
+                  </div>
+                  <div class = "img-item">
+                    <a href = "../../../assets/images/car-5.jpg" data-id = "2">
+                      <img src = "../../../assets/images/car-5.jpg" alt = "shoe image">
+                    </a>
+                  </div>
+                  <div class = "img-item">
+                    <a href = "../../../assets/images/car-2.jpg" data-id = "3">
+                      <img src = "../../../assets/images/car-2.jpg" alt = "shoe image">
+                    </a>
+                  </div>
+                  <div class = "img-item">
+                    <a href = "../../../assets/images/car-3.jpg" data-id = "4">
+                      <img src = "../../../assets/images/car-3.jpg" alt = "shoe image">
+                    </a>
+                  </div>
+                </div> -->
+              </div>
+              <!-- card right -->
+              <div class = "product-content">
+            
+                <h4>Ratings</h4>
+                <div class = "product-rating">
+                  <i class = "fas fa-star"></i>
+                  <i class = "fas fa-star"></i>
+                  <i class = "fas fa-star"></i>
+                  <i class = "fas fa-star"></i>
+                  <i class = "fas fa-star-half-alt"></i>
+                  <span>4.7(21)</span>
+                </div>
+      
+                <div class = "product-price">
+                  <!-- <p class = "last-price">Old Price: <span>$257.00</span></p> -->
+                  <p class = "new-price">Price/Day: <span>{{single[0].price2}}</span></p>
+                </div>
+      
+                <div class = "product-detail">
+                  <h2>Specification: </h2>
+                  <p>{{single[0].pagecontent2}}<p>
+
+                  <ul>
+                    <li>Color: <span>{{single[0].color2}}</span></li>
+                    <li>Available: <span>in stock</span></li>
+                    <li> Model: <span>{{single[0].model2}}</span></li>
+                    <li>Seating Capacity: <span>{{single[0].seatingcapacity2}}</span></li>
+                    <li>Air Conditioning: <span>{{single[0].Airconditioning2}}</span></li>
+                    <li> Engine (CC): <span>{{single[0].engine2}}</span></li>
+                    <li>Fuel Type: <span>{{single[0].fueltype2}}</span></li>
+                    <li>Fuel Capacity: <span>{{single[0].fuelcapacity2}}</span></li>
+                  </ul>
+                </div>
+      
+                <div class = "purchase-info">
+        
+                  <button type = "button" class = "btn" routerLink="/book">
+                    BOOK NOW 
+                  </button>
+
+                  
+                  <!-- <button type = "button" class = "btn">Compare</button> -->
+                </div>
+      
+                <div class = "social-links">
+                  <p>Share At: </p>
+                  <a hre = "#">
+                    <i class = "fab fa-facebook-f"></i>
+                  </a>
+                  <a hre = "#">
+                    <i class = "fab fa-twitter"></i>
+                  </a>
+                  <a hre = "#">
+                    <i class = "fab fa-instagram"></i>
+                  </a>
+                  <a hre = "#">
+                    <i class = "fab fa-whatsapp"></i>
+                  </a>
+                  <a hre = "#">
+                    <i class = "fab fa-pinterest"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+       
+        
+    </div>
+   </div> 
+</body>
+</html>

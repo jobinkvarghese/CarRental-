@@ -1,0 +1,33 @@
+
+        <div style="background-color: #18224b;">
+            <h1 class="h3">Luxuy Cars</h1>
+   
+
+
+
+<div class="container text-center " >
+    <div class="row" >
+      <div class="col"  *ngFor="let i of car">
+        <article class="card" style="height:100;">
+            <img
+              class="card__background"
+              src="../../../assets/images/{{i.img}}"
+              alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+              width="1920"
+              height="2193"
+            />
+            <div class="card__content | flow">
+              <div class="card__content--container | flow">
+                <h2 class="card__title">{{i.name}}</h2>
+                <p class="card__description">{{i.desc}}</p>
+              </div>
+              <!-- <button (click)="gotohere(i.id)" class="card__button" routerLink="contact">Read more</button> -->
+              <button (click)="gotohere(i.id)" style="width: fit-content;">Details</button>
+          
+            </div>
+          </article>
+      </div>
+    </div>
+  </div>
+<br> <br>
+</div>

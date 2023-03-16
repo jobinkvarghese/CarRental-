@@ -51,7 +51,13 @@
               "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
-              "namedChunks": true
+              "namedChunks": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.development.ts"
+                }
+              ]
             }
           },
           "defaultConfiguration": "production"
@@ -91,8 +97,21 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "Mini_project:build:production",
+            "firebaseProject": "mini-project-18515",
+            "firebaseHostingSite": "mini-project-18515"
+          }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "328cdd61-f096-46b8-b67e-854a9285309e"
   }
 }
